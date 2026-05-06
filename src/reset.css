@@ -4,7 +4,19 @@ body {
 	margin: 0;
 	overflow: hidden;
 	font-family: var( --gsui-font );
-	background-color: #333;
+	background-color: #171b2b;
+	background-image: radial-gradient( circle at 20% 15%, #28356b55, transparent 36% ), linear-gradient( 160deg, #171b2b, #0f1322 55%, #111a35 );
+	color: #dbe5ff;
+	accent-color: #5e8bff;
+}
+
+html {
+	--gsui-autoScale: 1;
+	font-size: calc( 16px * var( --gsui-autoScale ) );
+}
+
+body :where( button, input, select, textarea ) {
+	border-radius: 8px;
 }
 
 noscript {
